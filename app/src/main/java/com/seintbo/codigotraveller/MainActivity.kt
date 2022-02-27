@@ -1,0 +1,19 @@
+package com.seintbo.codigotraveller
+
+import android.content.Intent
+import androidx.appcompat.app.AppCompatActivity
+import android.os.Bundle
+import com.seintbo.codigotraveller.databinding.ActivityMainBinding
+
+class MainActivity : AppCompatActivity() {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+
+         val binding = ActivityMainBinding.inflate(layoutInflater)
+         setContentView(binding.root)
+         val createNewAccount = binding.createNewAccount
+         createNewAccount.setOnClickListener {
+             startActivity( Intent(this, CreateNewAccountActivity::class.java))
+         }
+    }
+}

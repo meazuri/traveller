@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">codigoTraveller</string>
+    <string name="welcome_title">Welcome to \nReady to Travel</string>
+    <string name="sign_up_title">Sign up with Facebook for the most fulfilling trip planning experience with us</string>
+    <string name="login_with_fb">Log in with Facebook</string>
+    <string name="login_with_email">Log in with email address</string>
+    <string name="create_new_acc">Create a new account </string>
+    <string name="almost_there">Almost there!</string>
+    <string name="newacc_disclaimer">Complete the form below to create your Ready To Travel account</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="email_address">Email Address</string>
+    <string name="dbo_text">Date of Birth</string>
+    <string name="nationality">Nationality</string>
+    <string name="countryOfResidence">Country of Residence</string>
+    <string name="mobileNumber">Mobile no. (Optional)</string>
+    <string name="create_my_acc">Create my account now</string>
+    <string name="empty_userName">First Name is Empty</string>
+    <string name="empty_dob">Date of Birth is Empty</string>
+    <string name="invalid_date">Invalid Date</string>
+    <string name="empty_lastName">LastName is Empty</string>
+    <string name="invalid_email">Invalid Email</string>
+    <string name="invalid_nationality">Invalid Nationality</string>
+    <string name="invalid_residence">Invalid Residence</string>
+    <string name="mandatory">*Mandatory</string>
+    <string name="dob_hint">dd/MM/yyyy</string>
+</resources>

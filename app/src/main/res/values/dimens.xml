@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="title_big">42sp</dimen>
+    <dimen name="margin_16">16dp</dimen>
+    <dimen name="button_height">60dp</dimen>
+    <dimen name="new_account_app_bar_height">278dp</dimen>
+    <dimen name="title_medium">32dp</dimen>
+    <dimen name="fab_bottom_padding">72dp</dimen>
+    <dimen name="margin_normal">16dp</dimen>
+    <dimen name="toolbar_elevation">5dp</dimen>
+</resources>
