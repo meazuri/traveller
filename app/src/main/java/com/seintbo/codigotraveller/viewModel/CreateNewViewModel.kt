@@ -9,9 +9,6 @@ import com.seint.takehome.isValidBirthday
 import com.seintbo.codigotraveller.CreateNewAccountResult
 import com.seintbo.codigotraveller.NewAccountFormState
 import com.seintbo.codigotraveller.R
-import java.text.DateFormat
-import java.text.SimpleDateFormat
-import java.util.*
 import java.util.regex.Matcher
 import java.util.regex.Pattern
 

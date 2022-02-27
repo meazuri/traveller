@@ -1,18 +1,21 @@
 package com.seintbo.codigotraveller
 
-import androidx.appcompat.app.AppCompatActivity
+import android.R
 import android.os.Bundle
 import android.text.Editable
 import android.text.InputType
 import android.text.TextWatcher
 import android.util.Log
+import android.view.MenuItem
+import android.view.View
 import android.widget.EditText
 import android.widget.Toast
-import androidx.core.widget.doAfterTextChanged
+import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import com.seintbo.codigotraveller.databinding.ActivityCreateNewAccountBinding
 import com.seintbo.codigotraveller.viewModel.CreateNewViewModel
+
 
 class CreateNewAccountActivity : AppCompatActivity() {
 
@@ -25,6 +28,12 @@ class CreateNewAccountActivity : AppCompatActivity() {
 
         binding = ActivityCreateNewAccountBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        val toolbar = binding.toolbar
+        toolbar.setTitle("")
+        setSupportActionBar(toolbar)
+        supportActionBar ?.setDisplayHomeAsUpEnabled(true)
+        supportActionBar?.setDisplayShowHomeEnabled(true)
 
         val firstName = binding.firstname
         val lastName = binding.lastname
@@ -102,6 +111,15 @@ class CreateNewAccountActivity : AppCompatActivity() {
         }
     }
 
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        return when (item.itemId) {
+            android.R.id.home -> {
+                finish()
+                true
+            }
+            else -> super.onOptionsItemSelected(item)
+        }
+    }
 }
 fun EditText.afterTextChanged(afterTextChanged: (String) -> Unit) {
     this.addTextChangedListener(object : TextWatcher {
